@@ -1,0 +1,28 @@
+Flask>=2.2.0,<3.0
+Flask-Cors==4.0.1
+flask-socketio==5.3.6
+eventlet==0.33.3
+
+youtube-dl==2021.12.17  # For YouTube download
+openai-whisper  # Whisper speech-to-text (ensure ffmpeg and libsndfile are installed)
+
+torch>=1.12.1  # For LLMs if not using Ollama's HTTP interface
+llama-index==0.10.28  # For QA over transcripts (LlamaIndex)
+
+requests==2.31.0
+
+# For speaker diarization (pyannote-audio)
+pyannote.audio==3.1.1  # Speaker diarization
+soundfile==0.13.0 # For audio file handling
+librosa==0.9.2  # For audio processing utilities
+python-dotenv
+psycopg2-binary
+flasgger
+
+numpy
+resemblyzer
+scikit-learn
+pydub
+dotenv
+python-dotenv
+webrtcvad

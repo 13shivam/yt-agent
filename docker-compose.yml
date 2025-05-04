@@ -1,0 +1,33 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:15
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_HOST: db
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: ytagent
+    volumes:
+      - ./db_init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+
+  flask-app:
+    build: .
+    container_name: flask_app
+    environment:
+      POSTGRES_HOST: db
+    env_file:
+      - .env
+    ports:
+      - "5050:5050"
+    depends_on:
+      - db
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge
