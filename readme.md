@@ -55,16 +55,19 @@ WHISPER_MODEL=base
 brew install ollama
 ollama run mistral:7b-instruct-fp16
 ```
+---
 ### 4. Run App
 ```bash
 docker compose build --no-cache
 docker compose up -d
 ```
 ![My Local Image](resource/docker_run.png)
-
+---
+---
 ### Access APIs via Swagger
 http://127.0.0.1:5050/apidocs/#
-
+---
+---
 ### Sequence Diagram all APIs 
 ![My Local Image](resource/ytagent.png)
 
