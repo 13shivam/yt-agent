@@ -26,8 +26,8 @@ A fast, offline-friendly **proof of concept (POC)** to transcribe YouTube videos
 ### 1. Clone the Project
 
 ```bash
-git clone https://github.com/13shivam/yt-transcribe-chat-agent.git
-cd yt-transcribe-chat-agent
+git clone https://github.com/13shivam/yt-agent.git
+cd yt-agent
 ````
 
 ### 2. Make sure a .env File exists
