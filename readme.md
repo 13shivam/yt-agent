@@ -94,3 +94,4 @@ http://127.0.0.1:5050/apidocs/#
 
 ### 🪪 WIP to add in future release: 
 - Speaker Diarization support via open source `pyannote.audio` 
+- Speaker Diarization — NVIDIA NeMo Framework
