@@ -95,3 +95,10 @@ http://127.0.0.1:5050/apidocs/#
 ### 🪪 WIP to add in future release: 
 - Speaker Diarization support via open source `pyannote.audio` 
 - Speaker Diarization — NVIDIA NeMo Framework
+
+## 📝 License
+This project is licensed under the MIT License - see the [license](LICENSE) file for details.
+
+Important Notice Regarding Open Source Dependencies:
+
+This project relies on various open-source models and libraries, each with its own licensing terms. It is the user's responsibility to understand and adhere to the specific licenses of all the open-source components they choose to use. Consult the individual licenses provided by the respective model and library providers.
